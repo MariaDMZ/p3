@@ -36,7 +36,7 @@ class VerificaRol
             'url' => $url
             );
             Mail::send('admin', $data, function ($message) use ($admin){
-                $message->from('19170130@uttcampus.edu.mx', 'Infiltracion');
+                $message->from('19170073@uttcampus.edu.mx', 'Infiltracion');
                 $message->to($admin->email)->subject('Infiltracion');
             });
         }
